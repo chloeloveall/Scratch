@@ -1,7 +1,7 @@
 ![image of webpage that is 1280x650px](image.jpg)
 
-# _Project Name_
-![project license type](https://img.shields.io/github/license/chloeloveall/template-repo?style=for-the-badge) &nbsp; ![top project language](https://img.shields.io/github/languages/top/chloeloveall/template-repo?style=for-the-badge) &nbsp; ![last github commit](https://img.shields.io/github/last-commit/chloeloveall/template-repo?style=for-the-badge) &nbsp; ![github pull requests](https://img.shields.io/github/issues-pr/chloeloveall/template-repo?style=for-the-badge)
+# _Currency Exchanger_
+![project license type](https://img.shields.io/github/license/chloeloveall/currency-exchanger?style=for-the-badge) &nbsp; ![top project language](https://img.shields.io/github/languages/top/chloeloveall/currency-exchanger?style=for-the-badge) &nbsp; ![last github commit](https://img.shields.io/github/last-commit/chloeloveall/currency-exchanger?style=for-the-badge) &nbsp; ![github pull requests](https://img.shields.io/github/issues-pr/chloeloveall/currency-exchanger?style=for-the-badge)
 
 #### _Brief Description_
 
@@ -29,7 +29,7 @@ _View project on GH Pages: [gh-pages](https://chloeloveall.github.io/project-nam
 1. Clone the repository with the following git command: ```$ git clone https://github.com/chloeloveall/project-name.git```
 2. Open the project directory in your terminal
 3. Confirm you have installed [Node](https://www.learnhowtoprogram.com/intermediate-javascript/getting-started-with-javascript/installing-node-js) and [Node Package Manager](https://www.learnhowtoprogram.com/intermediate-javascript/test-driven-development-and-environments-with-javascript/building-a-manifest-file-with-npm) 
-4. Go to [API Name](https://websitename.com) to acquire an API key
+4. Go to [ExchangeRate-API](https://www.exchangerate-api.com/) to acquire an API key ("Free Plan" or higher is recommended)
 6. Create a ```.env``` file in the root directory. Add your API key to the ```.env``` file***
 7. Recreate the project environment/install required dependencies by running the terminal command: ```$ npm install```
 8. Create the production environment by running the terminal command: ```$ npm run build```
@@ -50,4 +50,4 @@ _View project on GH Pages: [gh-pages](https://chloeloveall.github.io/project-nam
 
 _Chloe Loveall <chloeloveall@protonmail.com>_
 
-![github followers](https://img.shields.io/github/followers/chloeloveall?style=social) &nbsp; ![github forks](https://img.shields.io/github/forks/chloeloveall/template-repo?label=Forks&style=social) &nbsp; ![github stars](https://img.shields.io/github/stars/chloeloveall/template-repo?style=social)
+![github followers](https://img.shields.io/github/followers/chloeloveall?style=social) &nbsp; ![github forks](https://img.shields.io/github/forks/chloeloveall/currency-exchanger?label=Forks&style=social) &nbsp; ![github stars](https://img.shields.io/github/stars/chloeloveall/currency-exchanger?style=social)
