@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <title>Template Repo</title>
+  <title>Currency Exchanger</title>
 </head>
 <body>
   <div class="container">
     <h1>Welcome!</h1>
+
+    <form id="currencyForm">
+      <div class="form-group row">
+        <label for="currency-input" class="col-2 col-form-label">Amount in US Dollars:</label>
+        <div class="col-10">
+          <input class="form-control" type="number" min="0" id="currency-input" required>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    
+    <div id="currencyOutput">
+
+    </div>
 
   </div>
 </body>
