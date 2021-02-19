@@ -20,7 +20,7 @@ $(document).ready(function() {
       if (!response.ok) {
         $('#currencyOutput').html('<p>No results found. Please try again.</p>');
       } else {
-        const currencyReturn = (response.conversion_rates.EUR * userDollarInput);
+        const currencyReturn = (response.conversion_rates);
         $('#currencyOutput').html(`${currencyReturn}`);
       }
       console.log(response.conversion_rates.EUR);
