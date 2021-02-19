@@ -1,20 +1,18 @@
-/*eslint-disable*/
-import $, { get } from 'jquery';
+import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import ExchangeRate from './services/exchange-rate.js';
-/*eslint-disable*/
 
-// function clearFields() {
-//   $('#dollar-input').val("");
-//   $('#currency-input').val("");
-// }
+function clearFields() {
+  $('#dollar-input').val("");
+  $('#currency-input').val("");
+}
 
 $(document).ready(function() {
   $('#currencyForm').submit(function(event) {
     event.preventDefault();
-    // clearFields();
+    clearFields();
     const userDollarInput = $('#dollar-input').val();
     // const userCurrencyInput = $('#currency-input').val();
     (async function () {
@@ -25,8 +23,9 @@ $(document).ready(function() {
         const currencyReturn = (response.conversion_rates.EUR * userDollarInput);
         $('#currencyOutput').html(`${currencyReturn}`);
       }
+      console.log(response.conversion_rates.EUR);
     })();
-  })
-})
+  });
+});
 
 
