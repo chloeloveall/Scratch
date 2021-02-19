@@ -17,13 +17,12 @@ $(document).ready(function() {
     // const userCurrencyInput = $('#currency-input').val();
     (async function () {
       const response = await ExchangeRate.getExchangeRate(userDollarInput);
-      if (!response.ok) {
+      if (response.result !== 'success') {
         $('#currencyOutput').html('<p>No results found. Please try again.</p>');
       } else {
-        const currencyReturn = (response.conversion_rates);
-        $('#currencyOutput').html(`${currencyReturn}`);
+        const currencyReturn = response.conversion_rates.EUR;
+        $('#currencyOutput').html(`<p>${currencyReturn}</p>`);
       }
-      console.log(response.conversion_rates.EUR);
     })();
   });
 });
