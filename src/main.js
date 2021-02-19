@@ -20,13 +20,12 @@ $(document).ready(function() {
     (async function () {
       const response = await ExchangeRate.getExchangeRate(userDollarInput);
       if (!response.ok) {
-        console.log('hi');
         $('#currencyOutput').html('<p>No results found. Please try again.</p>');
       } else {
         const currencyReturn = (response.conversion_rates.EUR * userDollarInput);
         $('#currencyOutput').html(`${currencyReturn}`);
       }
-    })
+    })();
   })
 })
 
