@@ -13,7 +13,7 @@
 
 1. [Table of Contents](#table-of-contents)
 2. [Description](#description)
-3. [Demo/Preview](#preview)
+3. [Preview](#preview)
 4. [Technologies Used](#technologies-used)
 5. [Setup/Installation Requirements](#setup/installation-requirements)
     * [Installation](#installation)
