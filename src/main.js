@@ -13,7 +13,7 @@ $(document).ready(function() {
   $('#currencyForm').submit(function(event) {
     event.preventDefault();
     const userDollarInput = parseInt($('#dollar-input').val());
-    const userCurrencyInput = 'JPY';
+    const userCurrencyInput = 'GBP';
     // $('#currency-input').val();
     (async function () {
       console.log(userDollarInput);
@@ -21,7 +21,7 @@ $(document).ready(function() {
       if (response.result !== 'success') {
         $('#currencyOutput').html('<p>No results found. Please try another input.</p>');
       } else {
-        const currencyReturn = response.conversion_rates[(`${userCurrencyInput}`)] * userDollarInput;
+        const currencyReturn = response.conversion_rates[`${userCurrencyInput}`] * userDollarInput;
         $('#currencyOutput').html(`<p>${currencyReturn}</p>`);
       }
     })();
