@@ -22,3 +22,8 @@ h1 {
   -webkit-text-stroke-color: white;
   text-shadow: 8px 8px #85bb65, 20px 20px #000000;
 }
+
+.btn-primary {
+  background-color: #85bb65;
+  border: #85bb65;
+}
