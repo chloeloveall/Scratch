@@ -11,7 +11,4 @@ describe('ExchangeRate', () => {
     expect(exchangeRate).toBeInstanceOf(ExchangeRate);
   });
 
-  // test('should correctly create a exchangeRate object with inputtedCurrency property', () => {
-  //   expect(exchangeRate.inputtedCurrency).toEqual(100);
-  // });
 });
