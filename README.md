@@ -116,4 +116,4 @@ _Chloe Loveall <chloeloveall@protonmail.com>_
 
 ![github followers](https://img.shields.io/github/followers/chloeloveall?style=social) &nbsp; ![github forks](https://img.shields.io/github/forks/chloeloveall/currency-exchanger?label=Forks&style=social) &nbsp; ![github stars](https://img.shields.io/github/stars/chloeloveall/currency-exchanger?style=social)
 
-[Back to Top](#scratch:-a-currency-converter)
+[Back to Top](#table-of-contents)
