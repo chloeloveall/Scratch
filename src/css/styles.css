@@ -23,7 +23,19 @@ h1 {
   text-shadow: 8px 8px #85bb65, 20px 20px #000000;
 }
 
+h2 {
+  font-size: 20px;
+}
+
 .btn-primary {
   background-color: #85bb65;
   border: #85bb65;
+}
+
+#display {
+  display: none;
+}
+
+a:link, a:visited {
+  color: white;
 }
