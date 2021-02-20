@@ -28,11 +28,19 @@
 
 ## Description
 
-_In depth description_
+Scratch utilizes the ExchangeRate-API for currency conversion. Users can enter any US dollar amount (integers only) and receive the exchange rate of nearly any currency by inputting the necessary currency code. 
+<br>
+Currently, the North Korean Won (KPW) is unsupported. The following currencies experience heightened volatility & substantial differences between actual rates of exchange available in different markets and those published officially: 
+
+* Libyan Dinar (LYD), Libya
+* South Sudanese Pound (SSP), South Sudan
+* Syrian Pound (SYP), Syria
+* Venezuelan Bolívar Soberano (VES), Venezuela
+* Yemeni Rial (YER), Yemen
 
 ## Demo/Preview
 
-_View project on GH Pages: [gh-pages](https://chloeloveall.github.io/currency-exchanger/)_
+_Live preview on GH Pages: [gh-pages](https://chloeloveall.github.io/currency-exchanger/)_
 
 ## Technologies Used
 
@@ -71,11 +79,15 @@ _View project on GH Pages: [gh-pages](https://chloeloveall.github.io/currency-ex
 
 ## Specifications
 
-
+| Behavior                                                         | Input  | Output  |
+| ---------------------------------------------------------------- | -----: | ------: |
+| Return value of US dollar to EUR                                 |  1     | ~0.83   |
+| Return user's inputted amount to EUR                             |  25    | ~20.63  |
+| Returns error message if invalid currency code is entered        | ZZZ    | That is not a valid input. Please try again. |
 
 ## Known Bugs
 
-* None
+* None at this time
 
 ## Contributing
 
@@ -104,4 +116,4 @@ _Chloe Loveall <chloeloveall@protonmail.com>_
 
 ![github followers](https://img.shields.io/github/followers/chloeloveall?style=social) &nbsp; ![github forks](https://img.shields.io/github/forks/chloeloveall/currency-exchanger?label=Forks&style=social) &nbsp; ![github stars](https://img.shields.io/github/stars/chloeloveall/currency-exchanger?style=social)
 
-[Back to Top](#table-of-contents)
+[Back to Top](#scratch:-a-currency-converter)
