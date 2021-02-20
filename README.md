@@ -13,7 +13,7 @@
 
 1. [Table of Contents](#table-of-contents)
 2. [Description](#description)
-3. [Demo/Preview](#demo/preview)
+3. [Demo/Preview](#preview)
 4. [Technologies Used](#technologies-used)
 5. [Setup/Installation Requirements](#setup/installation-requirements)
     * [Installation](#installation)
@@ -38,9 +38,9 @@ Currently, the North Korean Won (KPW) is unsupported. The following currencies e
 * Venezuelan Bolívar Soberano (VES), Venezuela
 * Yemeni Rial (YER), Yemen
 
-## Demo/Preview
+## Preview
 
-_Live preview on GH Pages: [gh-pages](https://chloeloveall.github.io/currency-exchanger/)_
+Live preview on GH Pages: [gh-pages](https://chloeloveall.github.io/currency-exchanger/)
 
 ## Technologies Used
 
