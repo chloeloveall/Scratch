@@ -6,23 +6,27 @@ import ExchangeRate from './services/exchange-rate.js';
 
 function clearFields() {
   $('#dollar-input').val("");
-  // $('#currency-input').val("");
+  $('#currency-input').val("");
 }
 
 $(document).ready(function() {
   $('#currencyForm').submit(function(event) {
     event.preventDefault();
     const userDollarInput = parseInt($('#dollar-input').val());
-    const userCurrencyInput = 'GBP';
-    // $('#currency-input').val();
+    const userCurrencyInput = $('#currency-input').val().toUpperCase();
     (async function () {
       console.log(userDollarInput);
       const response = await ExchangeRate.getExchangeRate();
       if (response.result !== 'success') {
-        $('#currencyOutput').html('<p>No results found. Please try another input.</p>');
+        $('#currencyOutput').html('<p>No results found.</p>');
       } else {
         const currencyReturn = response.conversion_rates[`${userCurrencyInput}`] * userDollarInput;
-        $('#currencyOutput').html(`<p>${currencyReturn}</p>`);
+        if (!isNaN(currencyReturn)) {
+          $('#currencyOutput').html(`<p>${currencyReturn}</p>`);
+          console.log(currencyReturn);
+        } else {
+          $('#currencyOutput').html('<p>That is not a valid input. Please try again.</p>');
+        }
       }
     })();
     clearFields();
