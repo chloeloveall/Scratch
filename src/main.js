@@ -6,24 +6,26 @@ import ExchangeRate from './services/exchange-rate.js';
 
 function clearFields() {
   $('#dollar-input').val("");
-  $('#currency-input').val("");
+  // $('#currency-input').val("");
 }
 
 $(document).ready(function() {
   $('#currencyForm').submit(function(event) {
     event.preventDefault();
-    clearFields();
-    const userDollarInput = $('#dollar-input').val();
-    // const userCurrencyInput = $('#currency-input').val();
+    const userDollarInput = parseInt($('#dollar-input').val());
+    const userCurrencyInput = 'JPY';
+    // $('#currency-input').val();
     (async function () {
-      const response = await ExchangeRate.getExchangeRate(userDollarInput);
+      console.log(userDollarInput);
+      const response = await ExchangeRate.getExchangeRate();
       if (response.result !== 'success') {
-        $('#currencyOutput').html('<p>No results found. Please try again.</p>');
+        $('#currencyOutput').html('<p>No results found. Please try another input.</p>');
       } else {
-        const currencyReturn = response.conversion_rates.EUR;
+        const currencyReturn = response.conversion_rates[(`${userCurrencyInput}`)] * userDollarInput;
         $('#currencyOutput').html(`<p>${currencyReturn}</p>`);
       }
     })();
+    clearFields();
   });
 });
 
