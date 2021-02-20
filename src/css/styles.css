@@ -1,3 +1,24 @@
-body {
-  background-color: lightblue;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900i&display=swap');
+
+header {
+  padding: 100px 0 100px;
+  background:yellow;
+  font-family: 'Montserrat', sans-serif;
+}
+
+section {
+  padding: 100px 0;
+}
+
+h1 {
+  /* position: relative; */
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  font-size:100px;
+  letter-spacing:0.1em;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+  text-shadow: 8px 8px #85bb65, 20px 20px #000000;
 }
