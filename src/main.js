@@ -14,7 +14,7 @@ $(document).ready(function() {
     event.preventDefault();
 
     $('#currencyForm').hide();
-    $('#currencyOutput').show();
+    $('#display').show();
     const userDollarInput = parseInt($('#dollar-input').val());
     const userCurrencyInput = $('#currency-input').val().toUpperCase();
     (async function () {
@@ -34,8 +34,8 @@ $(document).ready(function() {
     })();
     clearFields();
   });
-  $('#currencyOutput').on('click', async function() {
-    $('#currencyOutput').hide();
+  $('#reset').on('click', async function() {
+    $('#display').hide();
     $('#currencyForm').show();
   });
 });
