@@ -17,7 +17,9 @@
 4. [Technologies Used](#technologies-used)
 5. [Setup/Installation Requirements](#setup/installation-requirements)
     * [Installation](#installation)
+    * [Additional Note for Windows Users](#additional-note-for-windows-users)
     * [ExchangeRate-API Setup](#exchangerate-api-setup)
+    * [Testing API Calls with Postman](#testing-api-calls-with-postman)
     * [API Security](#api-security)
 6. [Specifications](#specifications)
 7. [Known Bugs](#known-bugs)
@@ -66,9 +68,23 @@ Live preview on GH Pages: [gh-pages](https://chloeloveall.github.io/currency-exc
 * Create the production environment by running the terminal command: ```$ npm run build```
 * Open the project in the browser of your choice with the terminal command: ```$ npm run start```
 
+### Additional Note for Windows Users
+You may have issues when trying to use ```$ npm run build``` or ```$ npm run start```. If you receive an error message, do the following:
+  * Open package.json, line 8: ```"start": "npm run build; webpack-dev-server --open --mode development",```
+  * Change the line as follows: ```"start": "npm run build & webpack-dev-server --open --mode development",```
+
 ### ExchangeRate-API Setup 
 * Go to [ExchangeRate-API](https://www.exchangerate-api.com/) to sign up for a free account. This will allow you to acquire an API key (can be viewed through your account dashboard)
   ![ExchangeRate-API Dashboard Example](src/assets/images/api-dashboard.png)
+
+### Testing API Call with Postman
+If you would like to use Postman to test your API call:
+* Download [Postman](https://www.postman.com/downloads/) to your personal machine
+    * If you have a Mac, click the large orange download button with an Apple logo. If you are using Windows or Linux, there's a smaller download link just below the Mac download option
+* Install and open Postman
+* To make an API call, use the default GET request and type: ```https://v6.exchangerate-api.com/v6/{YOUR-API-KEY}/latest/usd```
+* Here is an example of a successful API Call with Status 200 OK:
+![Postman Example](src/assets/images/postman-example.png)
 
 ### API Security  
 * Create a ```.env``` file in the root directory of the project.***
@@ -96,7 +112,7 @@ Contributions are what make the open source community such an amazing place to b
 1. Fork the project on GirHub
     * Follow [Installation/Setup Instructions](#setup/installation-requirements) above
 2. Create your Feature Branch: ```$ git checkout -b YourFeatureBranchName```
-3. Commit your Changes ```$ git commit -m 'Add some AmazingFeature'```
+3. Commit your Changes ```$ git commit -m 'Add some Amazing Feature'```
 4. Push to your feature branch on Github ```$ git push origin YourFeatureBranchName```
 5. Open a Pull Request
 
