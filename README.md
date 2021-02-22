@@ -101,7 +101,7 @@ If you would like to use Postman to test your API call:
 | ---------------------------------------------------------------- | -----: | ------: |
 | Return value of US dollar to EUR                                 |  1     | ~0.83   |
 | Return user's inputted amount to EUR                             |  25    | ~20.63  |
-| Returns error message if invalid currency code is entered        | ZZZ    | That is not a valid input. Please try again. |
+| Returns error message if invalid currency code is entered        | ZZZ    | That is not a valid currency. Please try again. |
 
 ## Known Bugs
 
