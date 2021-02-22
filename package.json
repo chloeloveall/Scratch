@@ -1,7 +1,7 @@
 {
   "name": "currency-exchanger",
   "version": "1.0.0",
-  "description": "#### (Brief Description of Application)",
+  "description": "A currency converter that allows a user to input any US dollar amount and see its exchange value",
   "main": "main.js",
   "scripts": {
     "build": "webpack --mode development",
@@ -9,7 +9,7 @@
     "lint": "eslint src/*.js",
     "test": "jest --coverage"
   },
-  "keywords": [],
+  "keywords": ["currency calculator", "epicodus", "exchange rate API", "API"],
   "author": "Chloe Loveall",
   "license": "ISC",
   "devDependencies": {
