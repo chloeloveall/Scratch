@@ -24,7 +24,7 @@ $(document).ready(function() {
       if (response.result === 'success') {
         const currencyReturn = response.conversion_rates[`${userCurrencyInput}`] * userDollarInput;
         if (!isNaN(currencyReturn)) {
-          $('#currencyOutput').html(`<p>${currencyReturn}</p>`);
+          $('#currencyOutput').html(`<p>${userDollarInput} USD &nbsp; = &nbsp; ${currencyReturn} ${userCurrencyInput}<br><br> Last Updated: ${response['time_last_update_utc']}</p>`);
         } else {
           $('#currencyOutput').html('<p>That is not a valid currency. Please try again.</p>');
         }
