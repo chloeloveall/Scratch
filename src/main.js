@@ -23,7 +23,9 @@ $(document).ready(function() {
       const response = await ExchangeRate.getExchangeRate();
       if (response.result === 'success') {
         const currencyReturn = response.conversion_rates[`${userCurrencyInput}`] * userDollarInput;
-        if (!isNaN(currencyReturn)) {
+        if (userCurrencyInput === "LYD" || userCurrencyInput === "SSP" || userCurrencyInput === "SYP" || userCurrencyInput === "VES" || userCurrencyInput === "YER") {
+          $('#currencyOutput').html(`<p>${userDollarInput} USD &nbsp; = &nbsp; ${currencyReturn} ${userCurrencyInput}<br><br> ATTENTION: This currency (${userCurrencyInput}) experiences heightened volatility and there may be substantial differences between actual rates of exchange and those published officially. <br><br> Last Updated: ${response['time_last_update_utc']}</p>`);
+        } else if (!isNaN(currencyReturn)) {
           $('#currencyOutput').html(`<p>${userDollarInput} USD &nbsp; = &nbsp; ${currencyReturn} ${userCurrencyInput}<br><br> Last Updated: ${response['time_last_update_utc']}</p>`);
         } else {
           $('#currencyOutput').html('<p>That is not a valid currency. Please try again.</p>');
