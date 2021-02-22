@@ -44,6 +44,8 @@ Currently, the North Korean Won (KPW) is unsupported. The following currencies e
 
 Live preview on GH Pages: [gh-pages](https://chloeloveall.github.io/currency-exchanger/)
 
+The live preview uses the [ExchangeRate-API](https://www.exchangerate-api.com/) Open Access API that does **not** require an API Key. However, the Open Access API rate limited, but the rate limit should reset every 20 minutes. 
+
 ## Technologies Used
 
 * Bootstrap 4.6.0
