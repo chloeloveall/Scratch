@@ -22,13 +22,13 @@ $(document).ready(function() {
     (async function () {
       const response = await ExchangeRate.getExchangeRate();
       if (response.result !== 'success') {
-        $('#currencyOutput').html('<p>No results found.</p>');
+        $('#currencyOutput').html(`<p>No results found. API error: ${response}</p>`);
       } else {
         const currencyReturn = response.conversion_rates[`${userCurrencyInput}`] * userDollarInput;
         if (!isNaN(currencyReturn)) {
           $('#currencyOutput').html(`<p>${currencyReturn}</p>`);
         } else {
-          $('#currencyOutput').html('<p>That is not a valid input. Please try again.</p>');
+          $('#currencyOutput').html('<p>That is not a valid currency. Please try again.</p>');
         }
       }
     })();
