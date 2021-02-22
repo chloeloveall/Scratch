@@ -21,15 +21,17 @@ $(document).ready(function() {
 
     (async function () {
       const response = await ExchangeRate.getExchangeRate();
-      if (response.result !== 'success') {
-        $('#currencyOutput').html(`<p>No results found. API error: ${response}</p>`);
-      } else {
+      if (response.result === 'success') {
         const currencyReturn = response.conversion_rates[`${userCurrencyInput}`] * userDollarInput;
         if (!isNaN(currencyReturn)) {
           $('#currencyOutput').html(`<p>${currencyReturn}</p>`);
         } else {
           $('#currencyOutput').html('<p>That is not a valid currency. Please try again.</p>');
         }
+      } else if (response.result === 'error') {
+        $('#currencyOutput').html(`<p>There was an error processing your request. <br> Error: ${response['error-type']}</p>`);
+      } else {
+        $('#currencyOutput').html(`<p>There was an error processing your request. <br> Error: ${response}</p>`);
       }
     })();
 
