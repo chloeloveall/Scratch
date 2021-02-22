@@ -23,9 +23,16 @@ h2 {
   font-size: 20px;
 }
 
-.btn-primary {
+.btn-lg {
   background-color: #85bb65;
   border: #85bb65;
+  box-shadow: 8px 8px #000000;
+  border: 1px solid white;
+}
+
+.btn-lg:active, .btn-lg:hover {
+  background-color: yellow;
+  color: #000000;
 }
 
 #display {
