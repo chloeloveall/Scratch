@@ -17,7 +17,7 @@ module.exports = {
     new Dotenv(),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin ({
-      title: 'Template Repo',
+      title: 'Scratch: Currency Converter',
       template: './src/index.html',
       inject: 'body'
     })
