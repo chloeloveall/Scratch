@@ -15,7 +15,7 @@
 2. [Description](#description)
 3. [Preview](#preview)
 4. [Technologies Used](#technologies-used)
-5. [Setup/Installation Requirements](#setup/installation-requirements)
+5. [Setup and Installation Requirements](#setup-and-installation-requirements)
     * [Installation](#installation)
     * [Additional Note for Windows Users](#additional-note-for-windows-users)
     * [ExchangeRate-API Setup](#exchangerate-api-setup)
@@ -60,7 +60,7 @@ The live preview uses the [ExchangeRate-API](https://www.exchangerate-api.com/) 
 * Postman 8.0.4
 * webpack 4.39.3
 
-## Setup/Installation Requirements
+## Setup and Installation Requirements
 
 ### Installation
 * Clone the repository with the following git terminal command: ```$ git clone https://github.com/chloeloveall/currency-exchanger.git```
